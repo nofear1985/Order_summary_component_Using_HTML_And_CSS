@@ -120,7 +120,7 @@ body {
     color: var(--Desaturated-blue);
     font-weight: 700;
     text-decoration: none;
-    padding: 1.4375rem 0 0.8125rem;
+    padding: 1.5rem 0 0.8125rem;
 }
 .card .info .cancel:hover {
     color: var(--Dark-blue);

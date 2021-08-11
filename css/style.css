@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
     padding: 4.375rem 1.28125rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;

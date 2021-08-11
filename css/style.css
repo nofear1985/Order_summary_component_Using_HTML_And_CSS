@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    transition: all .2s linear;
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    background: var(--Pale-blue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 4.375rem 1.28125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+@media(min-width: 36em) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
+.card {
+    background-color: #fff;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    max-width: 28.125rem;
+    box-shadow: 0 0.625rem 1.25rem hsl(245deg 75% 52% / 10%);
+}
+.card .bg-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card .info {
+    padding: 1.5rem;
+    text-align: center;
+}
+@media(min-width: 36em) {
+    .card .info {
+        padding: 3rem;
+    }
+}
+.card .info .title {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 1.375rem;
+}
+@media(min-width: 36em) {
+    .card .info .title {
+        font-size: 1.875rem;
+    }
+}
+.card .info .description {
+    color: var(--Desaturated-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 1.25rem 0;
+}
+.card .info .plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--Very-pale-blue);
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+.card .info .plan .text {
+    margin: 0 auto 0 0.9375rem;
+}
+.card .info .plan .text .title {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 0.875rem;
+}
+.card .info .plan .text .price {
+    display: block;
+    padding-top: 0.3125rem;
+    color: var(--Desaturated-blue);
+    font-size: 0.875rem;
+}
+.card .info .plan .change {
+    display: block;
+    margin-left: 1.875rem;
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+.card .info .plan .change:hover {
+    --Bright-blue: hsla(245, 75%, 52%, 0.7);
+    text-decoration: none;
+}
+.card .info .payment {
+    display: block;
+    background-color: var(--Bright-blue);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.875rem 0;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 1.25rem hsl(245deg 75% 52% / 30%);
+}
+.card .info .payment:hover {
+    --Bright-blue: hsla(245, 75%, 52%, 0.7);
+}
+.card .info .cancel {
+    display: block;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.4375rem 0 0.8125rem;
+}
+.card .info .cancel:hover {
+    color: var(--Dark-blue);
+}
